@@ -4,10 +4,10 @@ const Room = require("../room");
 describe("Room", function () {
   let room;
   beforeEach(function () {
-    room = new Room(20, false);
+    room = new Room(10, false);
   });
   it("it should have an area", function () {
-    assert.strictEqual(room.area, 20);
+    assert.strictEqual(room.area, 10);
   });
   it("it should started not painted", function () {
     assert.strictEqual(room.isPainted, false);
