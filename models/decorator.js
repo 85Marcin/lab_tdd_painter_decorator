@@ -18,6 +18,7 @@ Decorator.prototype.isEnoughPaintToPaintRoom = function (room) {
 
 Decorator.prototype.paintRoom = function (room) {
   if (this.isEnoughPaintToPaintRoom(room)) {
+    this.paintStock[0].liters -= room.area;
     room.isPainted = true;
   }
 };
